@@ -1,0 +1,36 @@
+{
+  "title": "Animal Knowledge Quiz",
+  "description": "Test your knowledge about amazing animals from around the world!",
+  "questions": [
+    {
+      "question": "Which is the biggest land animal in the world?",
+      "options": ["Giraffe", "Elephant", "Hippopotamus", "Rhinoceros"],
+      "answer": "Elephant",
+      "explanation": "African elephants are the largest land animals – they can weigh up to 6,000 kg! That's like 100 humans combined! 🐘"
+    },
+    {
+      "question": "What do penguins eat?",
+      "options": ["Seaweed", "Fish and squid", "Krill and plants", "Insects"],
+      "answer": "Fish and squid",
+      "explanation": "Penguins are amazing swimmers that dive deep to catch fish and squid. They can hold their breath for over 20 minutes! 🐧"
+    },
+    {
+      "question": "How many legs does an octopus have?",
+      "options": ["6 legs", "8 legs", "10 legs", "12 legs"],
+      "answer": "8 legs",
+      "explanation": "Octopuses have 8 tentacles (arms), not legs! Each one has suction cups that help them catch food. They're super intelligent too! 🐙"
+    },
+    {
+      "question": "What is the fastest land animal?",
+      "options": ["Lion", "Gazelle", "Cheetah", "Greyhound"],
+      "answer": "Cheetah",
+      "explanation": "Cheetahs are the fastest land animals and can run up to 120 km per hour! They're built for speed. 🐆"
+    },
+    {
+      "question": "Which animal sleeps the most?",
+      "options": ["Sloth", "Koala", "Bat", "Hedgehog"],
+      "answer": "Koala",
+      "explanation": "Koalas sleep about 20 hours a day! They need lots of rest because eucalyptus leaves give them very little energy. 🐨"
+    }
+  ]
+}

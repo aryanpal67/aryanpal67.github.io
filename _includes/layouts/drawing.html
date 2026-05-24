@@ -1,0 +1,51 @@
+---
+layout: layouts/base.html
+---
+
+<article class="drawing-post container">
+
+  <div class="post-meta-bar">
+    <a href="/drawings/" class="back-link">← Back to Gallery</a>
+    <div class="post-tags">
+      {% for tag in tags %}
+        {% if tag != "drawings" %}
+        <span class="tag tag-art">{{ tag }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <h1 class="post-title">🎨 {{ title }}</h1>
+
+  <div class="post-meta">
+    <span class="meta-date">📅 {{ page.date | dateDisplay }}</span>
+    {% if medium %}
+    <span class="meta-dot">·</span>
+    <span class="meta-medium">🖌️ {{ medium }}</span>
+    {% endif %}
+  </div>
+
+  {% if image %}
+  <div class="drawing-img-wrap">
+    <img class="drawing-img" src="{{ image }}" alt="{{ title }} – drawing by Aryan" />
+  </div>
+  {% else %}
+  <div class="drawing-placeholder">
+    {{ emoji | default("🎨") }}
+    <p class="drawing-placeholder-label">Drawing coming soon!</p>
+  </div>
+  {% endif %}
+
+  <div class="post-body drawing-body">
+    {{ content | safe }}
+  </div>
+
+  <footer class="post-footer">
+    <div class="post-footer-inner">
+      <span class="post-footer-emoji">🎨</span>
+      <p>Do you like my drawing? Let me know!</p>
+      <a href="/drawings/" class="btn btn-secondary">🖼️ See All Drawings</a>
+    </div>
+  </footer>
+
+</article>
