@@ -1,10 +1,8 @@
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
-module.exports = function (eleventyConfig) {
+export default async function (eleventyConfig) {
 
   // ── Plugins ──────────────────────────────────────────────
-  // pathPrefix "/" because the site lives at the ROOT domain
-  // https://aryanpal67.github.io/  (not a sub-folder repo)
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   // ── Pass-through copies ───────────────────────────────────
@@ -45,7 +43,6 @@ module.exports = function (eleventyConfig) {
 
   // ── Build config ──────────────────────────────────────────
   return {
-    // Root-domain GitHub Pages → pathPrefix must be "/"
     pathPrefix: "/",
     dir: {
       input: ".",
@@ -56,4 +53,4 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };
-};
+}
