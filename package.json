@@ -2,6 +2,7 @@
   "name": "aryanpal-blog",
   "version": "1.0.0",
   "description": "Aryan's awesome kids blog built with Eleventy",
+  "type": "module",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
