@@ -1,0 +1,73 @@
+/* ============================================================
+   quiz-cards.css  –  Quiz navigation cards (quizzes page)
+   ADD this to kids-theme.css  OR  link separately in base.html
+   ============================================================ */
+
+/* Grid wrapper */
+.quiz-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual card */
+.quiz-nav-card {
+  position: relative;          /* keeps badge inside */
+  background: #fff;
+  border-radius: 22px;
+  padding: 1.8rem 1.6rem 1.6rem;
+  border: 3px solid var(--color-light-purple);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.quiz-nav-card:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 16px 44px rgba(0,0,0,0.13);
+}
+
+.quiz-nav-card:nth-child(1) { border-color: var(--color-sky-blue);        background: linear-gradient(135deg,#f0f9ff,#fff); }
+.quiz-nav-card:nth-child(2) { border-color: var(--color-peach-orange);    background: linear-gradient(135deg,#fff8f0,#fff); }
+.quiz-nav-card:nth-child(3) { border-color: var(--color-mint-green);      background: linear-gradient(135deg,#f0fff4,#fff); }
+
+/* Badge — absolute top-right INSIDE the card */
+.quiz-nav-card .card-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Emoji */
+.quiz-nav-emoji {
+  font-size: 3rem;
+  line-height: 1;
+  margin-top: 0.25rem;         /* small push below badge */
+  animation: emojiWiggle 4s ease-in-out infinite;
+}
+
+.quiz-nav-card:nth-child(2) .quiz-nav-emoji { animation-delay: .5s; }
+.quiz-nav-card:nth-child(3) .quiz-nav-emoji { animation-delay: 1s; }
+
+/* Title */
+.quiz-nav-title {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+/* Description */
+.quiz-nav-desc {
+  font-size: 0.92rem;
+  color: #5a6a7e;
+  line-height: 1.6;
+  margin: 0;
+}

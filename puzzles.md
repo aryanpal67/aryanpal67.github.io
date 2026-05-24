@@ -1,55 +1,150 @@
 ---
 layout: layouts/base.html
 title: "Puzzles"
-description: "Solve fun brain-teasers and interactive puzzles!"
+description: "Solve fun brain-teasers, riddles, sliding puzzles and secret codes!"
 ---
 
 <div class="page-hero page-hero-puzzles">
   <h1>🧩 Puzzle Zone</h1>
-  <p>Brain-teasers, riddles, and tricky puzzles to solve! Can you figure them all out? 🤔</p>
+  <p>6 awesome puzzles to solve! Riddles, codes, sliding tiles &amp; more! 🤔</p>
 </div>
 
+<!-- ══════════════════════════════════════════════
+     NAV CARDS
+══════════════════════════════════════════════ -->
 <section class="section reveal">
   <div class="container">
-    <div class="feature-cards">
-      <div class="feature-card">
-        <span class="feature-emoji">🧩</span>
-        <h3 class="feature-title">Jigsaw Puzzles</h3>
-        <p class="feature-description">Classic jigsaw puzzles coming soon! Help me complete the pictures.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-emoji">🔤</span>
-        <h3 class="feature-title">Word Riddles</h3>
-        <p class="feature-description">Solve tricky riddles and word puzzles. Think carefully!</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-emoji">🧠</span>
-        <h3 class="feature-title">Logic Puzzles</h3>
-        <p class="feature-description">Brain-bending logic challenges for smart kids like you!</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-emoji">🔍</span>
-        <h3 class="feature-title">Find Hidden Items</h3>
-        <p class="feature-description">Spot the hidden objects in tricky pictures!</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-emoji">🎨</span>
-        <h3 class="feature-title">Draw & Solve</h3>
-        <p class="feature-description">Creative puzzles where you draw the solution!</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-emoji">⭐</span>
-        <h3 class="feature-title">Mystery Codes</h3>
-        <p class="feature-description">Crack secret codes and hidden messages!</p>
-      </div>
+    <div class="puzzle-nav-grid">
+
+      <a href="#word-riddles"   class="puzzle-nav-card pnc-pink">
+        <span class="pnc-emoji">🔤</span>
+        <span class="pnc-title">Word Riddles</span>
+      </a>
+      <a href="#sliding-puzzle" class="puzzle-nav-card pnc-purple">
+        <span class="pnc-emoji">🧩</span>
+        <span class="pnc-title">Sliding Puzzle</span>
+      </a>
+      <a href="#logic-puzzles"  class="puzzle-nav-card pnc-sky">
+        <span class="pnc-emoji">🧠</span>
+        <span class="pnc-title">Logic Puzzles</span>
+      </a>
+      <a href="#spot-odd"       class="puzzle-nav-card pnc-mint">
+        <span class="pnc-emoji">🔍</span>
+        <span class="pnc-title">Spot the Odd One</span>
+      </a>
+      <a href="#number-puzzle"  class="puzzle-nav-card pnc-sunshine">
+        <span class="pnc-emoji">🔢</span>
+        <span class="pnc-title">Number Puzzles</span>
+      </a>
+      <a href="#secret-code"    class="puzzle-nav-card pnc-coral">
+        <span class="pnc-emoji">⭐</span>
+        <span class="pnc-title">Secret Codes</span>
+      </a>
+
     </div>
   </div>
 </section>
 
-<section class="section reveal">
-  <div class="container text-center">
-    <p style="font-size:1.1rem; color:#6a7a8a; font-weight:600">
-      🎯 I'm creating amazing puzzles! Check back soon! 🚀
-    </p>
+<div class="section deco-separator">🧩 🎯 🧩 🎯 🧩</div>
+
+<!-- ══════════════════════════════════════════════
+     1. WORD RIDDLES
+══════════════════════════════════════════════ -->
+<section class="section reveal" id="word-riddles" style="scroll-margin-top:90px">
+  <div class="container">
+    <h2 class="puzzle-section-title">🔤 Word Riddles</h2>
+    <p class="puzzle-section-sub">Read the riddle carefully and type your answer!</p>
+
+    <div class="puzzle-box" id="riddle-box">
+      <!-- rendered by puzzle.js -->
+    </div>
   </div>
 </section>
+
+<div class="section deco-separator">✨ 🔤 ✨ 🔤 ✨</div>
+
+<!-- ══════════════════════════════════════════════
+     2. SLIDING PUZZLE
+══════════════════════════════════════════════ -->
+<section class="section reveal" id="sliding-puzzle" style="scroll-margin-top:90px">
+  <div class="container">
+    <h2 class="puzzle-section-title">🧩 Sliding Puzzle</h2>
+    <p class="puzzle-section-sub">Click a tile next to the empty space to slide it. Put them in order 1–8!</p>
+
+    <div class="puzzle-box" style="text-align:center">
+      <div class="sliding-stats">
+        <span id="slide-moves">Moves: 0</span>
+        <span id="slide-status"></span>
+      </div>
+      <div class="slide-grid" id="slide-grid"></div>
+      <button class="btn btn-primary mt-3" id="slide-reset">🔀 Shuffle Again</button>
+    </div>
+  </div>
+</section>
+
+<div class="section deco-separator">✨ 🧩 ✨ 🧩 ✨</div>
+
+<!-- ══════════════════════════════════════════════
+     3. LOGIC PUZZLES
+══════════════════════════════════════════════ -->
+<section class="section reveal" id="logic-puzzles" style="scroll-margin-top:90px">
+  <div class="container">
+    <h2 class="puzzle-section-title">🧠 Logic Puzzles</h2>
+    <p class="puzzle-section-sub">Think carefully — these need your brain power! 💪</p>
+
+    <div class="puzzle-box" id="logic-box">
+      <!-- rendered by puzzle.js -->
+    </div>
+  </div>
+</section>
+
+<div class="section deco-separator">✨ 🧠 ✨ 🧠 ✨</div>
+
+<!-- ══════════════════════════════════════════════
+     4. SPOT THE ODD ONE OUT
+══════════════════════════════════════════════ -->
+<section class="section reveal" id="spot-odd" style="scroll-margin-top:90px">
+  <div class="container">
+    <h2 class="puzzle-section-title">🔍 Spot the Odd One Out</h2>
+    <p class="puzzle-section-sub">Find the emoji that does NOT belong with the others!</p>
+
+    <div class="puzzle-box" id="spot-box">
+      <!-- rendered by puzzle.js -->
+    </div>
+  </div>
+</section>
+
+<div class="section deco-separator">✨ 🔍 ✨ 🔍 ✨</div>
+
+<!-- ══════════════════════════════════════════════
+     5. NUMBER PUZZLES
+══════════════════════════════════════════════ -->
+<section class="section reveal" id="number-puzzle" style="scroll-margin-top:90px">
+  <div class="container">
+    <h2 class="puzzle-section-title">🔢 Number Puzzles</h2>
+    <p class="puzzle-section-sub">What comes next in the sequence? Find the pattern!</p>
+
+    <div class="puzzle-box" id="number-box">
+      <!-- rendered by puzzle.js -->
+    </div>
+  </div>
+</section>
+
+<div class="section deco-separator">✨ 🔢 ✨ 🔢 ✨</div>
+
+<!-- ══════════════════════════════════════════════
+     6. SECRET CODE DECODER
+══════════════════════════════════════════════ -->
+<section class="section reveal" id="secret-code" style="scroll-margin-top:90px">
+  <div class="container">
+    <h2 class="puzzle-section-title">⭐ Secret Code Decoder</h2>
+    <p class="puzzle-section-sub">Each emoji stands for a letter. Decode the secret message! 🕵️</p>
+
+    <div class="puzzle-box" id="code-box">
+      <!-- rendered by puzzle.js -->
+    </div>
+  </div>
+</section>
+
+<!-- All puzzle JS -->
+<script src="/assets/js/puzzle.js"></script>

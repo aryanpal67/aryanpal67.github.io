@@ -1,89 +1,94 @@
 /* =============================================================
-   quiz.js  –  Quiz engine
-   Reads JSON from quizzes/<slug>.json and renders the quiz.
-   Usage: add data-quiz="animal-quiz" on a container element.
+   quiz.js  –  Quiz engine  v2
+   Supports MULTIPLE quizzes on the same page.
+   Each [data-quiz] container is fully independent.
    ============================================================= */
 
-(async function initQuiz() {
-  const root = document.querySelector('[data-quiz]');
-  if (!root) return;
-
+async function loadQuiz(root) {
   const slug = root.dataset.quiz;
-  let data;
 
+  // Unique prefix per container so IDs never clash
+  const uid = 'qz-' + slug;
+
+  // Loading state
+  root.innerHTML = `<div class="quiz-wrapper" style="text-align:center;padding:2rem">
+    <span style="font-size:2rem">⏳</span>
+    <p style="font-family:'Baloo 2',cursive;font-weight:700;margin-top:.5rem">Loading quiz…</p>
+  </div>`;
+
+  let data;
   try {
-    const res  = await fetch(`/quizzes/${slug}.json`);
-    if (!res.ok) throw new Error('Network error');
+    const res = await fetch('/quizzes/' + slug + '.json');
+    if (!res.ok) throw new Error('Not found');
     data = await res.json();
   } catch (err) {
-    root.innerHTML = '<p style="color:red;font-weight:700">⚠️ Could not load quiz. Please try again.</p>';
+    root.innerHTML = '<div class="quiz-wrapper"><p style="color:#c03030;font-weight:700;font-family:\'Baloo 2\',cursive">⚠️ Could not load quiz <strong>' + slug + '</strong>. Make sure quizzes/' + slug + '.json exists.</p></div>';
     return;
   }
 
   const questions = data.questions;
   let qIndex = 0, score = 0, answered = false;
 
-  // Build DOM shell
-  root.innerHTML = `
-    <div class="quiz-wrapper">
-      <div class="quiz-progress-row">
-        <span class="quiz-score-badge" id="qz-score">Score: 0</span>
-        <div class="progress-bar"><div class="progress-fill" id="qz-progress" style="width:0%"></div></div>
-        <span class="quiz-counter" id="qz-counter">Q 1 of ${questions.length}</span>
-      </div>
-      <div class="quiz-question" id="qz-question"><span>🤔</span><span id="qz-text">Loading…</span></div>
-      <div class="quiz-options" id="qz-options"></div>
-      <div class="quiz-feedback" id="qz-feedback"></div>
-    </div>
-  `;
+  // Build DOM — all IDs namespaced with uid so multiple quizzes never clash
+  root.innerHTML =
+    '<div class="quiz-wrapper">' +
+      '<div class="quiz-progress-row">' +
+        '<span class="quiz-score-badge" id="' + uid + '-score">Score: 0</span>' +
+        '<div class="progress-bar"><div class="progress-fill" id="' + uid + '-progress" style="width:0%"></div></div>' +
+        '<span class="quiz-counter" id="' + uid + '-counter">Q 1 of ' + questions.length + '</span>' +
+      '</div>' +
+      '<div class="quiz-question"><span>🤔</span><span id="' + uid + '-text">Loading…</span></div>' +
+      '<div class="quiz-options" id="' + uid + '-options"></div>' +
+      '<div class="quiz-feedback" id="' + uid + '-feedback"></div>' +
+    '</div>';
+
+  function get(id) { return document.getElementById(uid + '-' + id); }
 
   function renderQuestion() {
     const q = questions[qIndex];
-    document.getElementById('qz-text').textContent    = q.question;
-    document.getElementById('qz-counter').textContent = `Q ${qIndex + 1} of ${questions.length}`;
-    document.getElementById('qz-progress').style.width = `${(qIndex / questions.length) * 100}%`;
-    document.getElementById('qz-feedback').textContent = '';
+    get('text').textContent     = q.question;
+    get('counter').textContent  = 'Q ' + (qIndex + 1) + ' of ' + questions.length;
+    get('progress').style.width = ((qIndex / questions.length) * 100) + '%';
+    get('feedback').textContent = '';
 
-    const opts = document.getElementById('qz-options');
+    const opts = get('options');
     opts.innerHTML = '';
-    q.options.forEach((opt, i) => {
+    q.options.forEach(function(opt, i) {
       const btn = document.createElement('button');
       btn.className   = 'quiz-option';
       btn.textContent = opt;
-      btn.addEventListener('click', () => handleAnswer(i, btn));
+      btn.addEventListener('click', function() { handleAnswer(i, btn, opts); });
       opts.appendChild(btn);
     });
     answered = false;
   }
 
-  function handleAnswer(chosen, btn) {
+  function handleAnswer(chosen, btn, opts) {
     if (answered) return;
     answered = true;
 
-    const q    = questions[qIndex];
-    const correct = typeof q.answer === 'number' ? q.answer : q.options.indexOf(q.answer);
+    const q = questions[qIndex];
+    const correct = typeof q.answer === 'number'
+      ? q.answer
+      : q.options.indexOf(q.answer);
 
-    document.querySelectorAll('.quiz-option').forEach(b => (b.disabled = true));
+    opts.querySelectorAll('.quiz-option').forEach(function(b) { b.disabled = true; });
 
     if (chosen === correct) {
       btn.classList.add('correct');
       score++;
-      document.getElementById('qz-score').textContent = `Score: ${score}`;
-      document.getElementById('qz-feedback').textContent = '🎉 Correct! ' + (q.explanation || '');
+      get('score').textContent    = 'Score: ' + score;
+      get('feedback').textContent = '🎉 Correct! ' + (q.explanation || '');
       if (typeof confettiBurst === 'function') confettiBurst(40);
     } else {
       btn.classList.add('wrong');
-      document.querySelectorAll('.quiz-option')[correct].classList.add('correct');
-      document.getElementById('qz-feedback').textContent = '❌ Not quite! ' + (q.explanation || '');
+      opts.querySelectorAll('.quiz-option')[correct].classList.add('correct');
+      get('feedback').textContent = '❌ Not quite! ' + (q.explanation || '');
     }
 
-    setTimeout(() => {
+    setTimeout(function() {
       qIndex++;
-      if (qIndex < questions.length) {
-        renderQuestion();
-      } else {
-        showResult();
-      }
+      if (qIndex < questions.length) { renderQuestion(); } else { showResult(); }
     }, 2200);
   }
 
@@ -91,20 +96,21 @@
     const pct = Math.round((score / questions.length) * 100);
     const msg = pct === 100
       ? '🌟 PERFECT SCORE! You are a GENIUS! 🌟'
-      : pct >= 60
-        ? '🎉 Great job! Keep learning!'
-        : '📚 Good try! Practice makes perfect!';
+      : pct >= 60 ? '🎉 Great job! Keep learning!' : '📚 Good try! Practice makes perfect!';
 
-    document.getElementById('qz-text').textContent        = `You scored ${score}/${questions.length}! (${pct}%) 🏆`;
-    document.getElementById('qz-feedback').textContent    = msg;
-    document.getElementById('qz-progress').style.width    = '100%';
-    document.getElementById('qz-options').innerHTML       = `
-      <button class="btn btn-primary" onclick="location.reload()" style="grid-column:1/-1">
-        🔄 Play Again!
-      </button>`;
+    get('text').textContent     = 'You scored ' + score + '/' + questions.length + '! (' + pct + '%) 🏆';
+    get('feedback').textContent = msg;
+    get('progress').style.width = '100%';
+    get('options').innerHTML    =
+      '<button class="btn btn-primary" onclick="loadQuiz(this.closest(\'[data-quiz]\'))" style="grid-column:1/-1">🔄 Play Again!</button>';
 
     if (pct === 100 && typeof confettiBurst === 'function') confettiBurst(80);
   }
 
   renderQuestion();
-})();
+}
+
+// Auto-init every [data-quiz] on the page — works for 1, 2, or 10 quizzes
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('[data-quiz]').forEach(function(el) { loadQuiz(el); });
+});

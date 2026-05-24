@@ -11,29 +11,26 @@ description: "Take fun quizzes about animals, space, science and more!"
 
 <section class="section reveal">
   <div class="container">
-    <div class="feature-cards" style="margin-bottom:3rem">
-      
-      <a href="#animal-quiz" class="feature-card" onclick="scrollToQuiz('animal-quiz')">
+
+    <div class="quiz-card-grid" style="margin-bottom:3rem">
+      <a href="#animal-quiz" class="quiz-nav-card" onclick="scrollToQuiz('animal-quiz')">
         <span class="card-badge badge-hot">Popular</span>
-        <span class="feature-emoji">🐾</span>
-        <h3 class="feature-title">Animal Quiz</h3>
-        <p class="feature-description">Do you know all about amazing animals? Test your knowledge now!</p>
+        <span class="quiz-nav-emoji">🐾</span>
+        <h3 class="quiz-nav-title">Animal Quiz</h3>
+        <p class="quiz-nav-desc">Do you know all about amazing animals? Test your knowledge now!</p>
       </a>
-
-      <a href="#space-quiz" class="feature-card" onclick="scrollToQuiz('space-quiz')">
+      <a href="#space-quiz" class="quiz-nav-card" onclick="scrollToQuiz('space-quiz')">
         <span class="card-badge badge-fun">Fun!</span>
-        <span class="feature-emoji">🚀</span>
-        <h3 class="feature-title">Space Quiz</h3>
-        <p class="feature-description">Explore the universe! How much do you know about planets and stars?</p>
+        <span class="quiz-nav-emoji">🚀</span>
+        <h3 class="quiz-nav-title">Space Quiz</h3>
+        <p class="quiz-nav-desc">Explore the universe! How much do you know about planets and stars?</p>
       </a>
-
-      <a href="#dinosaur-quiz" class="feature-card">
+      <a href="#dinosaur-quiz" class="quiz-nav-card" onclick="scrollToQuiz('dinosaur-quiz')">
         <span class="card-badge badge-new">New</span>
-        <span class="feature-emoji">🦕</span>
-        <h3 class="feature-title">Dinosaur Quiz</h3>
-        <p class="feature-description">Roar! Test your dinosaur knowledge. Which dino are you?</p>
+        <span class="quiz-nav-emoji">🦕</span>
+        <h3 class="quiz-nav-title">Dinosaur Quiz</h3>
+        <p class="quiz-nav-desc">Roar! Test your dinosaur knowledge. Which dino are you?</p>
       </a>
-
     </div>
 
     <div class="deco-separator">✨ 🧠 ✨ 🧠 ✨</div>
@@ -42,7 +39,6 @@ description: "Take fun quizzes about animals, space, science and more!"
     <div id="animal-quiz" style="margin-top:3rem;scroll-margin-top:100px">
       <h2 style="margin-bottom:1.5rem">🐾 Animal Knowledge Quiz</h2>
       <div data-quiz="animal-quiz"></div>
-      <script src="/assets/js/quiz.js"></script>
     </div>
 
     <div class="deco-separator">✨ 🧠 ✨ 🧠 ✨</div>
@@ -51,16 +47,26 @@ description: "Take fun quizzes about animals, space, science and more!"
     <div id="space-quiz" style="margin-top:3rem;scroll-margin-top:100px">
       <h2 style="margin-bottom:1.5rem">🚀 Space Exploration Quiz</h2>
       <div data-quiz="space-quiz"></div>
-      <script src="/assets/js/quiz.js"></script>
+    </div>
+
+    <div class="deco-separator">✨ 🧠 ✨ 🧠 ✨</div>
+
+    <!-- Dinosaur Quiz -->
+    <div id="dinosaur-quiz" style="margin-top:3rem;scroll-margin-top:100px">
+      <h2 style="margin-bottom:1.5rem">🦕 Dinosaur Quiz</h2>
+      <div data-quiz="dinosaur-quiz"></div>
     </div>
 
   </div>
 </section>
 
+<!-- Single script load — handles ALL quizzes above automatically -->
+<script src="/assets/js/quiz.js"></script>
+
 <script>
-function scrollToQuiz(quizId) {
-  setTimeout(() => {
-    document.getElementById(quizId).scrollIntoView({ behavior: 'smooth' });
+function scrollToQuiz(id) {
+  setTimeout(function() {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   }, 100);
   return false;
 }
