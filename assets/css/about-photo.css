@@ -1,0 +1,49 @@
+/* ============================================================
+   about-photo.css  –  Real profile photo styles
+   ============================================================ */
+
+/* Outer decorative ring with gradient border */
+.about-photo-ring {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  padding: 4px;
+  background: linear-gradient(
+    135deg,
+    var(--color-pink),
+    var(--color-light-purple),
+    var(--color-sky-blue),
+    var(--color-sunshine-yellow)
+  );
+  box-shadow:
+    0 8px 32px rgba(255,107,157,0.35),
+    0 0 0 6px rgba(167,139,250,0.15);
+  animation: avatarPulse 3.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+/* Inner photo */
+.about-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border: 3px solid #fff;
+}
+
+/* Pulse animation — reuses keyframe from kids-theme.css */
+@keyframes avatarPulse {
+  0%,100% {
+    box-shadow:
+      0 8px 32px rgba(255,107,157,0.35),
+      0 0 0 6px rgba(167,139,250,0.15);
+  }
+  50% {
+    box-shadow:
+      0 8px 40px rgba(255,107,157,0.5),
+      0 0 0 14px rgba(167,139,250,0.08);
+  }
+}

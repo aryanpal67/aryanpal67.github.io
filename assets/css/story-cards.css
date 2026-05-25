@@ -1,0 +1,183 @@
+/* ============================================================
+   story-cards.css  –  Story cards matching game nav card style
+   ============================================================ */
+
+/* ── Grid ────────────────────────────────────────────────── */
+.story-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.4rem;
+}
+
+/* ── Card — identical structure to .game-nav-card ────────── */
+.story-nav-card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  border: 3px solid #d8d0f0;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.4rem 1rem 1.2rem;
+  gap: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  transition: transform 0.28s cubic-bezier(.34,1.56,.64,1), box-shadow 0.28s ease;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.story-nav-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.13);
+}
+
+/* ── App-icon box — the white rounded square with emoji ──── */
+.snc-icon-box {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.10),
+    0 1px 4px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.story-nav-card:hover .snc-icon-box {
+  transform: scale(1.08);
+}
+
+/* ── Emoji inside the icon box ───────────────────────────── */
+.snc-emoji {
+  font-size: 2.5rem;
+  line-height: 1;
+  animation: emojiWiggle 4s ease-in-out infinite;
+  display: block;
+}
+
+.story-nav-card:nth-child(2)  .snc-emoji { animation-delay: .3s; }
+.story-nav-card:nth-child(3)  .snc-emoji { animation-delay: .6s; }
+.story-nav-card:nth-child(4)  .snc-emoji { animation-delay: .9s; }
+.story-nav-card:nth-child(5)  .snc-emoji { animation-delay: 1.2s; }
+.story-nav-card:nth-child(6)  .snc-emoji { animation-delay: 1.5s; }
+.story-nav-card:nth-child(7)  .snc-emoji { animation-delay: 1.8s; }
+.story-nav-card:nth-child(8)  .snc-emoji { animation-delay: 2.1s; }
+.story-nav-card:nth-child(9)  .snc-emoji { animation-delay: 2.4s; }
+.story-nav-card:nth-child(10) .snc-emoji { animation-delay: 2.7s; }
+
+/* ── Text block ──────────────────────────────────────────── */
+.snc-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+/* ── Title ───────────────────────────────────────────────── */
+.snc-title {
+  font-family: 'Baloo 2', cursive;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* ── Excerpt / desc ──────────────────────────────────────── */
+.snc-excerpt {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #8a96a3;
+  margin: 0;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Tags ────────────────────────────────────────────────── */
+.snc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-top: 0.1rem;
+}
+
+.snc-tag {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 0.6rem;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 50px;
+  background: #f0e8ff;
+  color: #6d4cc5;
+  white-space: nowrap;
+}
+
+/* ── Meta row (date + read time) ─────────────────────────── */
+.snc-meta {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #9aa4b0;
+  margin-top: 0.4rem;
+  padding-top: 0.5rem;
+  border-top: 1.5px dashed #f0eafa;
+  width: 100%;
+}
+
+/* ── Per-card border & icon-box background colours ───────── */
+/* matches game card nth-child colour system */
+.story-nav-card:nth-child(1)  { border-color: var(--color-mint-green);      background: linear-gradient(135deg,#f0fff4,#fff); }
+.story-nav-card:nth-child(1)  .snc-icon-box { background: linear-gradient(135deg,#edfff2,#fff); }
+
+.story-nav-card:nth-child(2)  { border-color: var(--color-sky-blue);        background: linear-gradient(135deg,#f0f9ff,#fff); }
+.story-nav-card:nth-child(2)  .snc-icon-box { background: linear-gradient(135deg,#e8f4ff,#fff); }
+
+.story-nav-card:nth-child(3)  { border-color: var(--color-peach-orange);    background: linear-gradient(135deg,#fff8f0,#fff); }
+.story-nav-card:nth-child(3)  .snc-icon-box { background: linear-gradient(135deg,#fff4e8,#fff); }
+
+.story-nav-card:nth-child(4)  { border-color: var(--color-teal);            background: linear-gradient(135deg,#f0fffc,#fff); }
+.story-nav-card:nth-child(4)  .snc-icon-box { background: linear-gradient(135deg,#e0fff8,#fff); }
+
+.story-nav-card:nth-child(5)  { border-color: var(--color-light-purple);    background: linear-gradient(135deg,#f5f0ff,#fff); }
+.story-nav-card:nth-child(5)  .snc-icon-box { background: linear-gradient(135deg,#ede8ff,#fff); }
+
+.story-nav-card:nth-child(6)  { border-color: var(--color-sunshine-yellow); background: linear-gradient(135deg,#fffdf0,#fff); }
+.story-nav-card:nth-child(6)  .snc-icon-box { background: linear-gradient(135deg,#fff9d6,#fff); }
+
+.story-nav-card:nth-child(7)  { border-color: var(--color-sky-blue);        background: linear-gradient(135deg,#f0f9ff,#fff); }
+.story-nav-card:nth-child(7)  .snc-icon-box { background: linear-gradient(135deg,#e8f4ff,#fff); }
+
+.story-nav-card:nth-child(8)  { border-color: var(--color-sunshine-yellow); background: linear-gradient(135deg,#fffdf0,#fff); }
+.story-nav-card:nth-child(8)  .snc-icon-box { background: linear-gradient(135deg,#fff9d6,#fff); }
+
+.story-nav-card:nth-child(9)  { border-color: var(--color-mint-green);      background: linear-gradient(135deg,#f0fff4,#fff); }
+.story-nav-card:nth-child(9)  .snc-icon-box { background: linear-gradient(135deg,#edfff2,#fff); }
+
+.story-nav-card:nth-child(10) { border-color: var(--color-pink);            background: linear-gradient(135deg,#fff5f9,#fff); }
+.story-nav-card:nth-child(10) .snc-icon-box { background: linear-gradient(135deg,#ffe8f4,#fff); }
+
+/* ── Mobile ──────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .story-cards-grid { grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+  .snc-icon-box     { width: 56px; height: 56px; border-radius: 14px; }
+  .snc-emoji        { font-size: 1.9rem; }
+  .snc-title        { font-size: 0.82rem; }
+  .snc-excerpt      { display: none; }
+}

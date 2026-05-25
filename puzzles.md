@@ -14,31 +14,37 @@ description: "Solve fun brain-teasers, riddles, sliding puzzles and secret codes
 ══════════════════════════════════════════════ -->
 <section class="section reveal">
   <div class="container">
-    <div class="puzzle-nav-grid">
+    <div class="games-nav-grid">
 
-      <a href="#word-riddles"   class="puzzle-nav-card pnc-pink">
-        <span class="pnc-emoji">🔤</span>
-        <span class="pnc-title">Word Riddles</span>
+      <a href="#word-riddles"   class="game-nav-card gnc-pink">
+        <span class="gnc-emoji">🔤</span>
+        <span class="gnc-title">Word Riddles</span>
+        <span class="gnc-desc">Solve tricky riddles!</span>
       </a>
-      <a href="#sliding-puzzle" class="puzzle-nav-card pnc-purple">
-        <span class="pnc-emoji">🧩</span>
-        <span class="pnc-title">Sliding Puzzle</span>
+      <a href="#sliding-puzzle" class="game-nav-card gnc-purple">
+        <span class="gnc-emoji">🧩</span>
+        <span class="gnc-title">Sliding Puzzle</span>
+        <span class="gnc-desc">Put tiles in order!</span>
       </a>
-      <a href="#logic-puzzles"  class="puzzle-nav-card pnc-sky">
-        <span class="pnc-emoji">🧠</span>
-        <span class="pnc-title">Logic Puzzles</span>
+      <a href="#logic-puzzles"  class="game-nav-card gnc-sky">
+        <span class="gnc-emoji">🧠</span>
+        <span class="gnc-title">Logic Puzzles</span>
+        <span class="gnc-desc">Use your brain!</span>
       </a>
-      <a href="#spot-odd"       class="puzzle-nav-card pnc-mint">
-        <span class="pnc-emoji">🔍</span>
-        <span class="pnc-title">Spot the Odd One</span>
+      <a href="#spot-odd"       class="game-nav-card gnc-mint">
+        <span class="gnc-emoji">🔍</span>
+        <span class="gnc-title">Spot the Odd One</span>
+        <span class="gnc-desc">Find what's different!</span>
       </a>
-      <a href="#number-puzzle"  class="puzzle-nav-card pnc-sunshine">
-        <span class="pnc-emoji">🔢</span>
-        <span class="pnc-title">Number Puzzles</span>
+      <a href="#number-puzzle"  class="game-nav-card gnc-sunshine">
+        <span class="gnc-emoji">🔢</span>
+        <span class="gnc-title">Number Puzzles</span>
+        <span class="gnc-desc">Find the pattern!</span>
       </a>
-      <a href="#secret-code"    class="puzzle-nav-card pnc-coral">
-        <span class="pnc-emoji">⭐</span>
-        <span class="pnc-title">Secret Codes</span>
+      <a href="#secret-code"    class="game-nav-card gnc-coral">
+        <span class="gnc-emoji">⭐</span>
+        <span class="gnc-title">Secret Codes</span>
+        <span class="gnc-desc">Crack the cipher!</span>
       </a>
 
     </div>

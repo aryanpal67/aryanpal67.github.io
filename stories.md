@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.html
 title: "Stories"
-description: "Read all of Aryan's amazing stories – adventures, fantasy, space and more!"
+description: "Read all of Aryan's amazing stories!"
 ---
 
 <div class="page-hero page-hero-stories">
@@ -11,37 +11,18 @@ description: "Read all of Aryan's amazing stories – adventures, fantasy, space
 
 <section class="section reveal">
   <div class="container">
-    <div class="stories-grid">
+    <div class="games-nav-grid">
+
       {% for story in collections.stories %}
-        <a href="{{ story.url }}" class="story-card">
-          <div class="story-thumb" style="background: linear-gradient(135deg, #E8F8FF, #D8E8FF)">
-            {% if story.data.emoji %}{{ story.data.emoji }}{% else %}📖{% endif %}
-          </div>
-          <div class="story-info">
-            {% if story.data.tags %}
-              {% for tag in story.data.tags %}
-                {% if tag != "stories" %}
-                  <span class="tag tag-story">{{ tag }}</span>
-                {% endif %}
-              {% endfor %}
-            {% endif %}
-            <h3>{{ story.data.title }}</h3>
-            <p class="story-excerpt">{{ story.data.excerpt or story.content | slice(0, 160) }}…</p>
-            <div class="story-footer-meta">
-              <span>📅 {{ story.date | dateDisplay }}</span>
-              {% if story.data.readtime %}<span>⏱️ {{ story.data.readtime }} min read</span>{% endif %}
-            </div>
-          </div>
+        {% set colors = ["gnc-pink","gnc-mint","gnc-sky","gnc-sunshine","gnc-purple","gnc-coral","gnc-pink","gnc-mint","gnc-sky","gnc-sunshine"] %}
+        {% set ci = loop.index0 % 6 %}
+        <a href="{{ story.url }}" class="game-nav-card {{ colors[ci] }}">
+          <span class="gnc-emoji">{{ story.data.emoji | default("📖") }}</span>
+          <span class="gnc-title">{{ story.data.title }}</span>
+          <span class="gnc-desc">{{ story.data.readtime | default(5) }} min read</span>
         </a>
       {% endfor %}
+
     </div>
   </div>
 </section>
-
-{% if not collections.stories.length %}
-<section class="section">
-  <div class="container text-center">
-    <p style="font-size:1.2rem;color:#8a96a3;font-weight:600">No stories yet! Check back soon! 📚</p>
-  </div>
-</section>
-{% endif %}

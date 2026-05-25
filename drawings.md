@@ -11,15 +11,13 @@ description: "Check out all of Aryan's amazing drawings and artwork!"
 
 <section class="section reveal">
   <div class="container">
-    <div class="gallery">
+    <div class="games-nav-grid">
+      {% set colors = ["gnc-sunshine","gnc-coral","gnc-purple","gnc-mint","gnc-sky","gnc-pink","gnc-sunshine","gnc-coral","gnc-purple","gnc-mint"] %}
       {% for drawing in collections.drawings %}
-        <a href="{{ drawing.url }}" class="gallery-item">
-          <div class="gallery-placeholder">
-            {% if drawing.data.emoji %}{{ drawing.data.emoji }}{% else %}🎨{% endif %}
-          </div>
-          <div class="gallery-overlay">
-            <h3>{{ drawing.data.title }}</h3>
-          </div>
+        <a href="{{ drawing.url }}" class="game-nav-card {{ colors[loop.index0 % 6] }}">
+          <span class="gnc-emoji">{{ drawing.data.emoji | default("🎨") }}</span>
+          <span class="gnc-title">{{ drawing.data.title }}</span>
+          <span class="gnc-desc">{{ drawing.data.medium | default("My artwork") }}</span>
         </a>
       {% endfor %}
     </div>

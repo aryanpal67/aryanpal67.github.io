@@ -81,23 +81,13 @@ description: "Aryan's awesome kids blog – stories, art, quizzes & games!"
     <div class="section-header">
       <h2 class="section-title">📖 Latest Stories</h2>
     </div>
-    <div class="stories-grid">
-      {% for story in collections.stories | limit(3) %}
-        <a href="{{ story.url }}" class="story-card">
-          <div class="story-thumb" style="background: linear-gradient(135deg, #E8F8FF, #D8E8FF)">
-            {% if story.data.emoji %}{{ story.data.emoji }}{% else %}📖{% endif %}
-          </div>
-          <div class="story-info">
-            {% if story.data.tags %}
-              <span class="tag tag-story">📚 Story</span>
-            {% endif %}
-            <h3>{{ story.data.title }}</h3>
-            <p class="story-excerpt">{{ story.data.excerpt or story.content | slice(0, 140) }}…</p>
-            <div class="story-footer-meta">
-              <span>📅 {{ story.date | dateDisplay }}</span>
-              {% if story.data.readtime %}<span>⏱️ {{ story.data.readtime }} min</span>{% endif %}
-            </div>
-          </div>
+    <div class="games-nav-grid">
+      {% set colors = ["gnc-pink","gnc-mint","gnc-sky","gnc-sunshine","gnc-purple","gnc-coral"] %}
+      {% for story in collections.stories | limit(6) %}
+        <a href="{{ story.url }}" class="game-nav-card {{ colors[loop.index0 % 6] }}">
+          <span class="gnc-emoji">{{ story.data.emoji | default("📖") }}</span>
+          <span class="gnc-title">{{ story.data.title }}</span>
+          <span class="gnc-desc">{{ story.data.readtime | default(5) }} min read</span>
         </a>
       {% endfor %}
     </div>
@@ -114,15 +104,13 @@ description: "Aryan's awesome kids blog – stories, art, quizzes & games!"
     <div class="section-header">
       <h2 class="section-title">🎨 My Recent Art</h2>
     </div>
-    <div class="gallery">
+    <div class="games-nav-grid">
+      {% set dcolors = ["gnc-sunshine","gnc-coral","gnc-purple","gnc-mint","gnc-sky","gnc-pink"] %}
       {% for drawing in collections.drawings | limit(6) %}
-        <a href="{{ drawing.url }}" class="gallery-item">
-          <div class="gallery-placeholder">
-            {% if drawing.data.emoji %}{{ drawing.data.emoji }}{% else %}🎨{% endif %}
-          </div>
-          <div class="gallery-overlay">
-            <h3>{{ drawing.data.title }}</h3>
-          </div>
+        <a href="{{ drawing.url }}" class="game-nav-card {{ dcolors[loop.index0 % 6] }}">
+          <span class="gnc-emoji">{{ drawing.data.emoji | default("🎨") }}</span>
+          <span class="gnc-title">{{ drawing.data.title }}</span>
+          <span class="gnc-desc">{{ drawing.data.medium | default("My artwork") }}</span>
         </a>
       {% endfor %}
     </div>
