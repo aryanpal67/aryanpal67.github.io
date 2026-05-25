@@ -1,0 +1,12 @@
+{
+  "title": "Cool Science Quiz",
+  "questions": [
+    { "question": "What is the chemical symbol for water?", "options": ["WA", "H2O", "HO2", "W2O"], "answer": "H2O", "explanation": "Water = 2 Hydrogen atoms + 1 Oxygen atom. H2O is one of the most important molecules! 💧" },
+    { "question": "What force keeps us on the ground?", "options": ["Magnetism", "Friction", "Gravity", "Electricity"], "answer": "Gravity", "explanation": "Gravity is the force that pulls everything towards the centre of Earth! 🍎" },
+    { "question": "What is the hardest natural substance on Earth?", "options": ["Gold", "Iron", "Diamond", "Quartz"], "answer": "Diamond", "explanation": "Diamond is pure carbon arranged in a special way that makes it incredibly hard! 💎" },
+    { "question": "How many colours of light make up white light?", "options": ["3", "5", "7", "9"], "answer": "7", "explanation": "White light contains all 7 rainbow colours — a prism splits them apart! 🌈" },
+    { "question": "What is the speed of light?", "options": ["300 km/s", "3,000 km/s", "300,000 km/s", "3,000,000 km/s"], "answer": "300,000 km/s", "explanation": "Light travels at 299,792 km per second — so fast it circles Earth 7 times per second! ⚡" },
+    { "question": "What gas do plants breathe in to make food?", "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"], "answer": "Carbon Dioxide", "explanation": "Plants absorb CO2 and use sunlight to turn it into food — this is photosynthesis! 🌿" },
+    { "question": "What is the powerhouse of the cell?", "options": ["Nucleus", "Cell wall", "Mitochondria", "Ribosomes"], "answer": "Mitochondria", "explanation": "Mitochondria produce energy for the cell — that's why they're called the powerhouse! ⚡" }
+  ]
+}

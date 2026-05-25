@@ -1,0 +1,12 @@
+{
+  "title": "Fun Maths Quiz",
+  "questions": [
+    { "question": "What is 7 × 8?", "options": ["54", "56", "58", "60"], "answer": "56", "explanation": "7 × 8 = 56! One trick: 5, 6, 7, 8 → 56 = 7 × 8! 🔢" },
+    { "question": "What shape has 6 sides?", "options": ["Pentagon", "Hexagon", "Heptagon", "Octagon"], "answer": "Hexagon", "explanation": "Hexagon has 6 sides — like a honeycomb cell! 🐝" },
+    { "question": "What is the value of π (pi) approximately?", "options": ["2.14", "3.14", "4.14", "5.14"], "answer": "3.14", "explanation": "Pi ≈ 3.14159... It's the ratio of a circle's circumference to its diameter! ⭕" },
+    { "question": "How many degrees are in a right angle?", "options": ["45°", "60°", "90°", "180°"], "answer": "90°", "explanation": "A right angle is exactly 90 degrees — like the corner of a square! 📐" },
+    { "question": "What is 100 ÷ 4?", "options": ["20", "25", "30", "40"], "answer": "25", "explanation": "100 ÷ 4 = 25. Think of it as splitting 100 into 4 equal groups! 🔢" },
+    { "question": "What is the next prime number after 7?", "options": ["8", "9", "10", "11"], "answer": "11", "explanation": "Prime numbers are only divisible by 1 and themselves: 2,3,5,7,11,13... 🔢" },
+    { "question": "What is 15% of 200?", "options": ["20", "25", "30", "35"], "answer": "30", "explanation": "15% of 200 = 200 × 0.15 = 30. Percent just means 'per hundred'! 💯" }
+  ]
+}

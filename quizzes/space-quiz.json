@@ -9,10 +9,10 @@
       "explanation": "Mercury is the closest planet to the Sun! It's also the smallest planet in our Solar System. ☀️"
     },
     {
-      "question": "Which is the biggest planet in our Solar System?",
-      "options": ["Saturn", "Neptune", "Jupiter", "Uranus"],
-      "answer": "Jupiter",
-      "explanation": "Jupiter is so huge that all the other planets could fit inside it! It also has a giant storm called the Great Red Spot. 🪐"
+      "question": "How many moons does Jupiter have?",
+      "options": ["4 moons", "16 moons", "79 moons", "95 moons"],
+      "answer": "79 moons",
+      "explanation": "Jupiter has at least 79 known moons! The four biggest ones are called the Galilean moons, named after the scientist who discovered them. 🪐"
     },
     {
       "question": "What is the name of our galaxy?",
@@ -21,28 +21,16 @@
       "explanation": "We live in the Milky Way galaxy! It has over 100 billion stars, and our Sun is just one of them. 🌌"
     },
     {
+      "question": "What is an astronaut?",
+      "options": ["A person who studies rocks", "A person who travels to space", "A person who builds rockets", "A person who watches stars"],
+      "answer": "A person who travels to space",
+      "explanation": "Astronauts are brave explorers who travel to space to do experiments and explore! They wear special suits to survive in space. 🚀"
+    },
+    {
       "question": "Which planet is known as the Red Planet?",
-      "options": ["Venus", "Jupiter", "Mercury", "Mars"],
+      "options": ["Venus", "Mars", "Mercury", "Saturn"],
       "answer": "Mars",
-      "explanation": "Mars looks red because of rusty dust on its surface! Scientists think it may have had liquid water billions of years ago. 🔴"
-    },
-    {
-      "question": "How long does it take light to travel from the Sun to Earth?",
-      "options": ["About 8 minutes", "About 1 hour", "About 1 day", "About 1 second"],
-      "answer": "About 8 minutes",
-      "explanation": "Light travels incredibly fast – 300,000 km per second – but the Sun is still so far away it takes about 8 minutes! ⚡"
-    },
-    {
-      "question": "What is a shooting star actually made of?",
-      "options": ["A small star", "A piece of a planet", "A meteor burning up", "A comet's tail"],
-      "answer": "A meteor burning up",
-      "explanation": "Shooting stars are actually small rocks called meteors that burn up as they enter Earth's atmosphere. They're not stars at all! 🌠"
-    },
-    {
-      "question": "Which planet has rings around it?",
-      "options": ["Only Saturn", "Jupiter and Saturn", "Saturn, Uranus, Jupiter and Neptune", "Only Jupiter"],
-      "answer": "Saturn, Uranus, Jupiter and Neptune",
-      "explanation": "All four outer gas planets have rings, but Saturn's rings are the biggest and most beautiful – made of ice and rock! 💍"
+      "explanation": "Mars is called the Red Planet because it looks reddish due to rusty dust on its surface! Scientists think it might have had water long ago. 🔴"
     }
   ]
 }

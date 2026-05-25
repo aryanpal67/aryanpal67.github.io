@@ -1,0 +1,12 @@
+{
+  "title": "Amazing India Quiz",
+  "questions": [
+    { "question": "What is the capital city of India?", "options": ["Mumbai", "Kolkata", "New Delhi", "Chennai"], "answer": "New Delhi", "explanation": "New Delhi is the capital of India and home to the President and Parliament! 🏛️" },
+    { "question": "Which river is considered the holiest in India?", "options": ["Yamuna", "Ganga", "Brahmaputra", "Godavari"], "answer": "Ganga", "explanation": "The Ganga (Ganges) is India's holiest river, flowing 2,525 km across the country! 🏞️" },
+    { "question": "What is the national animal of India?", "options": ["Lion", "Elephant", "Bengal Tiger", "Peacock"], "answer": "Bengal Tiger", "explanation": "The majestic Bengal Tiger is India's national animal — there are about 3,000 left! 🐯" },
+    { "question": "Which Indian city is known as the 'City of Pearls'?", "options": ["Jaipur", "Hyderabad", "Agra", "Varanasi"], "answer": "Hyderabad", "explanation": "Hyderabad is called the City of Pearls because of its famous pearl trade! 💎" },
+    { "question": "How many states does India have?", "options": ["25", "28", "30", "32"], "answer": "28", "explanation": "India has 28 states and 8 Union Territories — it's a huge and diverse country! 🗺️" },
+    { "question": "Which is the tallest mountain in India?", "options": ["K2", "Nanda Devi", "Kanchenjunga", "Mount Everest"], "answer": "Kanchenjunga", "explanation": "Kanchenjunga at 8,586m is the highest peak entirely in India (Everest is on Nepal's border)! 🏔️" },
+    { "question": "What is the national sport of India?", "options": ["Cricket", "Football", "Field Hockey", "Kabaddi"], "answer": "Field Hockey", "explanation": "Field Hockey is officially India's national sport — India won 8 Olympic gold medals! 🏑" }
+  ]
+}

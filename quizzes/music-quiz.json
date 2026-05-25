@@ -1,0 +1,12 @@
+{
+  "title": "Music & Arts Quiz",
+  "questions": [
+    { "question": "How many strings does a standard guitar have?", "options": ["4", "5", "6", "7"], "answer": "6", "explanation": "A standard guitar has 6 strings — E, A, D, G, B, E from thickest to thinnest! 🎸" },
+    { "question": "Which instrument has 88 keys?", "options": ["Organ", "Harpsichord", "Piano", "Accordion"], "answer": "Piano", "explanation": "A standard piano has 88 keys — 52 white and 36 black! 🎹" },
+    { "question": "What are the 7 musical notes?", "options": ["A B C D E F G", "Do Re Mi Fa Sol La Si", "Both are correct", "Neither is correct"], "answer": "Both are correct", "explanation": "A-B-C-D-E-F-G and Do-Re-Mi-Fa-Sol-La-Si are two naming systems for the same 7 notes! 🎵" },
+    { "question": "Which famous composer was deaf?", "options": ["Mozart", "Bach", "Beethoven", "Chopin"], "answer": "Beethoven", "explanation": "Beethoven composed his famous 9th Symphony when he was completely deaf — incredible! 🎼" },
+    { "question": "How many colours are in the spectrum used in painting?", "options": ["3 primary", "6", "7", "12"], "answer": "3 primary", "explanation": "There are 3 primary colours in painting: Red, Yellow, Blue — mix these to make all others! 🎨" },
+    { "question": "What is the world's most played instrument?", "options": ["Piano", "Guitar", "Violin", "Voice/singing"], "answer": "Voice/singing", "explanation": "The human voice is technically an instrument — and everyone has one! 🎤" },
+    { "question": "What instrument does a 'drummer' play?", "options": ["Trumpet", "Drum kit", "Trombone", "Xylophone"], "answer": "Drum kit", "explanation": "A drum kit has bass drum, snare, cymbals and tom-toms — the heartbeat of a band! 🥁" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Technology Quiz",
+  "questions": [
+    { "question": "What does 'WWW' stand for?", "options": ["World Wide Web", "World Web Works", "Wide World Web", "Web World Wide"], "answer": "World Wide Web", "explanation": "Tim Berners-Lee invented the World Wide Web in 1989 — it changed everything! 🌐" },
+    { "question": "What does CPU stand for?", "options": ["Computer Power Unit", "Central Processing Unit", "Core Program Unit", "Computer Process Unit"], "answer": "Central Processing Unit", "explanation": "The CPU is the brain of a computer — it processes all instructions! 💻" },
+    { "question": "Which company made the first iPhone?", "options": ["Samsung", "Google", "Apple", "Microsoft"], "answer": "Apple", "explanation": "Steve Jobs unveiled the first iPhone on 9 January 2007 — it changed mobile phones forever! 📱" },
+    { "question": "What does 'AI' stand for?", "options": ["Automatic Intelligence", "Artificial Intelligence", "Advanced Internet", "Android Interface"], "answer": "Artificial Intelligence", "explanation": "AI means machines that can think and learn — like robots and smart assistants! 🤖" },
+    { "question": "How many bits are in a byte?", "options": ["4", "8", "16", "32"], "answer": "8", "explanation": "1 byte = 8 bits. Bits are 0s and 1s — the basic language computers use! 💾" },
+    { "question": "What programming language is named after a snake?", "options": ["Java", "Ruby", "Python", "Cobra"], "answer": "Python", "explanation": "Python was named after Monty Python (a comedy show) not the snake — but the snake logo stuck! 🐍" },
+    { "question": "What does 'GPS' stand for?", "options": ["Global Position System", "General Positioning Satellite", "Global Positioning System", "Ground Position Sensor"], "answer": "Global Positioning System", "explanation": "GPS uses satellites orbiting Earth to tell your phone exactly where you are! 🛰️" }
+  ]
+}

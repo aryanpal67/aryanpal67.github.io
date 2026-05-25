@@ -1,0 +1,12 @@
+{
+  "title": "Human Body Quiz",
+  "questions": [
+    { "question": "How many bones does an adult human body have?", "options": ["106", "206", "306", "406"], "answer": "206", "explanation": "Adults have 206 bones! Babies are born with about 270, some fuse together as they grow! 🦴" },
+    { "question": "Which is the largest organ in the human body?", "options": ["Brain", "Liver", "Skin", "Heart"], "answer": "Skin", "explanation": "Skin is the largest organ! It covers your entire body and protects you! 🫁" },
+    { "question": "How many teeth does a human adult have?", "options": ["28", "32", "36", "24"], "answer": "32", "explanation": "Adult humans have 32 teeth including the wisdom teeth! 🦷" },
+    { "question": "Which part of the body pumps blood?", "options": ["Lungs", "Brain", "Liver", "Heart"], "answer": "Heart", "explanation": "Your heart pumps blood non-stop — about 100,000 times every day! ❤️" },
+    { "question": "How many chambers does the human heart have?", "options": ["2", "3", "4", "5"], "answer": "4", "explanation": "The heart has 4 chambers — 2 atria and 2 ventricles! 💓" },
+    { "question": "Which organ controls everything in your body?", "options": ["Heart", "Stomach", "Brain", "Lungs"], "answer": "Brain", "explanation": "Your brain is the control centre — it sends signals to every part of your body! 🧠" },
+    { "question": "What do red blood cells carry?", "options": ["Food", "Oxygen", "Water", "Vitamins"], "answer": "Oxygen", "explanation": "Red blood cells carry oxygen from your lungs to every cell in your body! 🩸" }
+  ]
+}

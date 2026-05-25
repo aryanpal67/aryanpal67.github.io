@@ -1,0 +1,12 @@
+{
+  "title": "Weather & Nature Quiz",
+  "questions": [
+    { "question": "What causes thunder during a storm?", "options": ["Clouds bumping together", "Lightning heating air rapidly", "Heavy rain", "Strong winds"], "answer": "Lightning heating air rapidly", "explanation": "Lightning superheats the air around it so fast it expands and creates a boom! ⚡" },
+    { "question": "What is a tornado?", "options": ["A type of cloud", "A spinning column of air", "A heavy rainstorm", "An underwater wave"], "answer": "A spinning column of air", "explanation": "A tornado is a violent rotating column of air that touches both clouds and ground! 🌪️" },
+    { "question": "What causes rainbows?", "options": ["Reflection in puddles", "Sunlight through raindrops", "Special clouds", "The moon's light"], "answer": "Sunlight through raindrops", "explanation": "Sunlight bends inside raindrops and splits into all colours of the spectrum! 🌈" },
+    { "question": "How many colours are in a rainbow?", "options": ["5", "6", "7", "8"], "answer": "7", "explanation": "Red, Orange, Yellow, Green, Blue, Indigo, Violet — remember ROY G BIV! 🌈" },
+    { "question": "What is the centre of a hurricane called?", "options": ["The heart", "The eye", "The core", "The funnel"], "answer": "The eye", "explanation": "The eye of a hurricane is surprisingly calm — clear skies while chaos surrounds it! 🌀" },
+    { "question": "What is hail made of?", "options": ["Frozen rain", "Ice balls that form in storms", "Snow clumps", "Frozen clouds"], "answer": "Ice balls that form in storms", "explanation": "Hailstones form when updrafts carry water droplets high up where they freeze! 🧊" },
+    { "question": "Which country gets the most lightning strikes?", "options": ["USA", "India", "Brazil", "Democratic Republic of Congo"], "answer": "Democratic Republic of Congo", "explanation": "The Congo gets the most lightning because of its tropical forests and heat! ⛈️" }
+  ]
+}

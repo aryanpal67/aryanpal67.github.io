@@ -1,0 +1,12 @@
+{
+  "title": "Food & Nutrition Quiz",
+  "questions": [
+    { "question": "Which fruit has the most vitamin C?", "options": ["Orange", "Apple", "Guava", "Mango"], "answer": "Guava", "explanation": "Guava has 4 times more Vitamin C than an orange — it's a superfruit! 🍈" },
+    { "question": "What vegetable can you see in the dark after eating?", "options": ["Spinach", "Carrot", "Broccoli", "Peas"], "answer": "Carrot", "explanation": "Carrots are rich in Vitamin A which helps your eyesight — especially night vision! 🥕" },
+    { "question": "Which food gives you the most energy?", "options": ["Protein", "Carbohydrates", "Vitamins", "Water"], "answer": "Carbohydrates", "explanation": "Carbohydrates like rice, bread and pasta are your body's main energy fuel! 🍚" },
+    { "question": "What is the world's most popular fruit?", "options": ["Apple", "Banana", "Tomato", "Mango"], "answer": "Tomato", "explanation": "Technically tomatoes are fruits — and they're the most eaten 'fruit' worldwide! 🍅" },
+    { "question": "Which nut is actually a legume?", "options": ["Cashew", "Walnut", "Peanut", "Almond"], "answer": "Peanut", "explanation": "Peanuts grow underground and are legumes like beans and lentils, not true nuts! 🥜" },
+    { "question": "How much water should you drink per day?", "options": ["1 glass", "4 glasses", "8 glasses", "20 glasses"], "answer": "8 glasses", "explanation": "About 8 glasses (2 litres) of water a day keeps your body working perfectly! 💧" },
+    { "question": "Which Indian dish is made from fermented rice and lentils?", "options": ["Roti", "Dosa", "Paratha", "Naan"], "answer": "Dosa", "explanation": "Dosa batter is fermented overnight — that's why it's crispy and slightly tangy! 🫓" }
+  ]
+}

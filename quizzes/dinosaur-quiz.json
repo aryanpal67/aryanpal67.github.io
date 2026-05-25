@@ -1,48 +1,12 @@
 {
   "title": "Dinosaur Quiz",
-  "description": "Roar! How much do you know about the amazing dinosaurs that once ruled the Earth?",
   "questions": [
-    {
-      "question": "What does the name 'Dinosaur' mean?",
-      "options": ["Giant lizard", "Terrible lizard", "Big reptile", "Ancient monster"],
-      "answer": "Terrible lizard",
-      "explanation": "The word 'dinosaur' comes from Greek – 'deinos' means terrible and 'sauros' means lizard! 🦎"
-    },
-    {
-      "question": "Which was the largest meat-eating dinosaur?",
-      "options": ["T-Rex", "Velociraptor", "Spinosaurus", "Allosaurus"],
-      "answer": "Spinosaurus",
-      "explanation": "Spinosaurus was even bigger than T-Rex! It could grow up to 18 metres long and loved to eat fish. 🐟"
-    },
-    {
-      "question": "What did the Triceratops use its three horns for?",
-      "options": ["Digging for food", "Defence against predators", "Attracting a mate", "Breaking trees"],
-      "answer": "Defence against predators",
-      "explanation": "Triceratops used its three sharp horns to defend itself against predators like T-Rex. It was like a rhino of its time! 🦏"
-    },
-    {
-      "question": "Which dinosaur had the longest neck?",
-      "options": ["Brachiosaurus", "Diplodocus", "Brontosaurus", "Argentinosaurus"],
-      "answer": "Brachiosaurus",
-      "explanation": "Brachiosaurus had an incredibly long neck to reach leaves high up in the treetops – like a giant giraffe! 🦒"
-    },
-    {
-      "question": "How did most dinosaurs reproduce?",
-      "options": ["Live birth like mammals", "Laying eggs", "Budding like plants", "Splitting in two"],
-      "answer": "Laying eggs",
-      "explanation": "Dinosaurs laid eggs just like modern birds and reptiles! Some nests have been found with many eggs inside. 🥚"
-    },
-    {
-      "question": "What are birds considered to be?",
-      "options": ["Descendants of mammals", "Relatives of crocodiles", "Living dinosaurs", "Ancient insects"],
-      "answer": "Living dinosaurs",
-      "explanation": "Birds evolved from theropod dinosaurs! So when you see a sparrow, you're looking at a tiny living dinosaur. 🐦"
-    },
-    {
-      "question": "How long ago did the dinosaurs go extinct?",
-      "options": ["1 million years ago", "10 million years ago", "66 million years ago", "200 million years ago"],
-      "answer": "66 million years ago",
-      "explanation": "A massive asteroid hit Earth about 66 million years ago and wiped out most dinosaurs. That's a very long time ago! ☄️"
-    }
+    { "question": "What does the word 'dinosaur' mean?", "options": ["Giant lizard", "Terrible lizard", "Big reptile", "Ancient monster"], "answer": "Terrible lizard", "explanation": "'Deinos' means terrible and 'sauros' means lizard in Greek! 🦎" },
+    { "question": "Which was the largest meat-eating dinosaur?", "options": ["T-Rex", "Velociraptor", "Spinosaurus", "Allosaurus"], "answer": "Spinosaurus", "explanation": "Spinosaurus was bigger than T-Rex at up to 18 metres long! 🦕" },
+    { "question": "What did Triceratops use its three horns for?", "options": ["Digging food", "Defence", "Attracting mates", "Breaking trees"], "answer": "Defence", "explanation": "Triceratops used its horns to defend against predators like T-Rex! 🦏" },
+    { "question": "Which dinosaur had the longest neck?", "options": ["Brachiosaurus", "Diplodocus", "Brontosaurus", "Argentinosaurus"], "answer": "Brachiosaurus", "explanation": "Brachiosaurus had an incredibly long neck to reach tall treetops! 🦒" },
+    { "question": "How did dinosaurs reproduce?", "options": ["Live birth", "Laying eggs", "Budding", "Splitting in two"], "answer": "Laying eggs", "explanation": "Dinosaurs laid eggs just like modern birds and reptiles! 🥚" },
+    { "question": "What are birds considered to be?", "options": ["Descendants of mammals", "Relatives of crocs", "Living dinosaurs", "Ancient insects"], "answer": "Living dinosaurs", "explanation": "Birds evolved from theropod dinosaurs — they're tiny living dinos! 🐦" },
+    { "question": "How long ago did dinosaurs go extinct?", "options": ["1 million years ago", "10 million years ago", "66 million years ago", "200 million years ago"], "answer": "66 million years ago", "explanation": "A huge asteroid hit Earth 66 million years ago and wiped them out! ☄️" }
   ]
 }

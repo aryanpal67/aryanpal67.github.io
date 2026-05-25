@@ -1,0 +1,12 @@
+{
+  "title": "World History Quiz",
+  "questions": [
+    { "question": "Who built the Great Pyramids of Giza?", "options": ["Romans", "Greeks", "Ancient Egyptians", "Persians"], "answer": "Ancient Egyptians", "explanation": "The Ancient Egyptians built the pyramids over 4,500 years ago as tombs for pharaohs! 🏺" },
+    { "question": "Who invented the telephone?", "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Benjamin Franklin"], "answer": "Alexander Graham Bell", "explanation": "Alexander Graham Bell made the first telephone call in 1876 — to his assistant Watson! 📞" },
+    { "question": "Who was the first person to walk on the Moon?", "options": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "John Glenn"], "answer": "Neil Armstrong", "explanation": "Neil Armstrong stepped on the Moon on 20 July 1969 saying 'One small step for man...' 🚀" },
+    { "question": "Which ancient wonder was located in Egypt?", "options": ["Colosseum", "Great Wall", "Lighthouse of Alexandria", "Stonehenge"], "answer": "Lighthouse of Alexandria", "explanation": "The Lighthouse of Alexandria was one of the 7 Wonders of the Ancient World! 🗼" },
+    { "question": "Who painted the Mona Lisa?", "options": ["Michelangelo", "Raphael", "Leonardo da Vinci", "Pablo Picasso"], "answer": "Leonardo da Vinci", "explanation": "Da Vinci painted the Mona Lisa between 1503-1519 — it's now in the Louvre in Paris! 🎨" },
+    { "question": "When did India gain independence?", "options": ["1945", "1947", "1950", "1952"], "answer": "1947", "explanation": "India gained independence from British rule on 15 August 1947 — Independence Day! 🇮🇳" },
+    { "question": "Who was the first woman to win a Nobel Prize?", "options": ["Mother Teresa", "Marie Curie", "Malala Yousafzai", "Rosalind Franklin"], "answer": "Marie Curie", "explanation": "Marie Curie won Nobel Prizes in both Physics (1903) and Chemistry (1911)! ⚗️" }
+  ]
+}

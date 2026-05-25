@@ -1,0 +1,12 @@
+{
+  "title": "Sports Quiz",
+  "questions": [
+    { "question": "How many players are on a cricket team?", "options": ["9", "10", "11", "12"], "answer": "11", "explanation": "A cricket team has 11 players — and one of them is the wicket-keeper! 🏏" },
+    { "question": "How many rings are on the Olympic flag?", "options": ["4", "5", "6", "7"], "answer": "5", "explanation": "5 rings represent the 5 continents — blue, yellow, black, green and red! 🏅" },
+    { "question": "What sport is played at Wimbledon?", "options": ["Cricket", "Golf", "Tennis", "Badminton"], "answer": "Tennis", "explanation": "Wimbledon is the world's oldest tennis tournament, played in London since 1877! 🎾" },
+    { "question": "How many points is a try worth in rugby?", "options": ["3", "4", "5", "6"], "answer": "5", "explanation": "A try scores 5 points in rugby — then you can attempt a conversion for 2 more! 🏉" },
+    { "question": "How long is a standard football match?", "options": ["60 minutes", "80 minutes", "90 minutes", "100 minutes"], "answer": "90 minutes", "explanation": "Football matches are 90 minutes — 2 halves of 45 minutes each! ⚽" },
+    { "question": "Which country has won the most Cricket World Cups?", "options": ["India", "Australia", "West Indies", "England"], "answer": "Australia", "explanation": "Australia has won 6 Cricket World Cup titles — the most of any nation! 🏆" },
+    { "question": "In which sport do you score a 'hat-trick'?", "options": ["Only cricket", "Only football", "Both cricket and football", "Only hockey"], "answer": "Both cricket and football", "explanation": "A hat-trick means 3 in a row — 3 wickets in cricket or 3 goals in football! ⚽🏏" }
+  ]
+}

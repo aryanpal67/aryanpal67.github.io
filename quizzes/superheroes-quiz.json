@@ -1,0 +1,12 @@
+{
+  "title": "Superheroes Quiz",
+  "questions": [
+    { "question": "What is Spider-Man's real name?", "options": ["Bruce Wayne", "Peter Parker", "Clark Kent", "Tony Stark"], "answer": "Peter Parker", "explanation": "Peter Parker was bitten by a radioactive spider and became the Amazing Spider-Man! 🕷️" },
+    { "question": "What planet is Superman from?", "options": ["Mars", "Jupiter", "Krypton", "Zor"], "answer": "Krypton", "explanation": "Superman (Kal-El) was sent from Krypton as a baby before it exploded! 🦸" },
+    { "question": "What is Batman's superpower?", "options": ["Super strength", "Flight", "No superpowers — just skills and gadgets", "Telepathy"], "answer": "No superpowers — just skills and gadgets", "explanation": "Batman has no superpowers — just intelligence, martial arts, and incredible gadgets! 🦇" },
+    { "question": "What colour is the Hulk?", "options": ["Red", "Blue", "Yellow", "Green"], "answer": "Green", "explanation": "The Hulk is famous for being big and green! Bruce Banner turns into him when angry! 💚" },
+    { "question": "What is Iron Man's real name?", "options": ["Steve Rogers", "Bruce Banner", "Tony Stark", "Peter Parker"], "answer": "Tony Stark", "explanation": "Tony Stark is a genius billionaire who built a powered armour suit to become Iron Man! ⚙️" },
+    { "question": "Which superhero uses a magical hammer called Mjolnir?", "options": ["Captain America", "Thor", "Hawkeye", "Loki"], "answer": "Thor", "explanation": "Thor is the Norse God of Thunder and only the worthy can lift Mjolnir! ⚡" },
+    { "question": "What does 'DC' stand for in DC Comics?", "options": ["Detective Comics", "Digital Comics", "Dynamic Comics", "Drawing Comics"], "answer": "Detective Comics", "explanation": "DC started as Detective Comics in 1934 — featuring Batman as a detective-hero! 🦇" }
+  ]
+}

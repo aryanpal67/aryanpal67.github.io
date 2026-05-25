@@ -1,0 +1,12 @@
+{
+  "title": "World Geography Quiz",
+  "questions": [
+    { "question": "Which is the largest country in the world by area?", "options": ["China", "USA", "Russia", "Canada"], "answer": "Russia", "explanation": "Russia is HUGE — it covers 11 time zones and is twice the size of the USA! 🗺️" },
+    { "question": "Which is the longest river in the world?", "options": ["Amazon", "Nile", "Yangtze", "Mississippi"], "answer": "Nile", "explanation": "The Nile in Africa stretches 6,650 km — though Amazon has more water volume! 🌊" },
+    { "question": "Which continent has the most countries?", "options": ["Asia", "Europe", "South America", "Africa"], "answer": "Africa", "explanation": "Africa has 54 countries — more than any other continent on Earth! 🌍" },
+    { "question": "What is the smallest country in the world?", "options": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"], "answer": "Vatican City", "explanation": "Vatican City is only 0.44 km² — smaller than most parks! It's inside Rome, Italy! ⛪" },
+    { "question": "Which mountain is the tallest in the world?", "options": ["K2", "Kangchenjunga", "Mount Everest", "Lhotse"], "answer": "Mount Everest", "explanation": "Mount Everest at 8,849m is Earth's highest peak — on the Nepal-China border! 🏔️" },
+    { "question": "Which desert is the largest in the world?", "options": ["Sahara", "Gobi", "Arabian", "Antarctic"], "answer": "Antarctic", "explanation": "Antarctica is technically the world's largest desert — it gets very little rain or snow! 🏜️" },
+    { "question": "How many continents are there?", "options": ["5", "6", "7", "8"], "answer": "7", "explanation": "Africa, Antarctica, Asia, Australia, Europe, North America, South America — 7 continents! 🌎" }
+  ]
+}

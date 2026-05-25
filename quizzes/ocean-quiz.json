@@ -1,0 +1,12 @@
+{
+  "title": "Ocean & Sea Life Quiz",
+  "questions": [
+    { "question": "What is the largest ocean on Earth?", "options": ["Atlantic", "Indian", "Arctic", "Pacific"], "answer": "Pacific", "explanation": "The Pacific Ocean is the largest — it covers more than 30% of Earth's surface! 🌊" },
+    { "question": "How many arms does an octopus have?", "options": ["6", "8", "10", "12"], "answer": "8", "explanation": "Octopuses have 8 arms, each with suckers to grip prey! 🐙" },
+    { "question": "What is the fastest fish in the ocean?", "options": ["Tuna", "Marlin", "Sailfish", "Shark"], "answer": "Sailfish", "explanation": "The sailfish can swim at up to 110 km/h — faster than a car on a motorway! 🐟" },
+    { "question": "What is the largest animal that has ever lived?", "options": ["Elephant", "Whale shark", "Blue whale", "Giant squid"], "answer": "Blue whale", "explanation": "The blue whale is the largest animal ever — even bigger than dinosaurs! 🐋" },
+    { "question": "How do fish breathe underwater?", "options": ["Through their skin", "Through gills", "They hold their breath", "Through their fins"], "answer": "Through gills", "explanation": "Fish use gills to extract oxygen from water — brilliant design! 🐠" },
+    { "question": "What colour is an octopus's blood?", "options": ["Red", "Blue", "Green", "Clear"], "answer": "Blue", "explanation": "Octopus blood is blue because it uses copper-based haemocyanin instead of iron! 🩵" },
+    { "question": "Which sea creature can regenerate lost arms?", "options": ["Shark", "Dolphin", "Starfish", "Jellyfish"], "answer": "Starfish", "explanation": "Starfish can regrow lost arms — and some can even grow a whole new body! ⭐" }
+  ]
+}
