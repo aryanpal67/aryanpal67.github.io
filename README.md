@@ -9,7 +9,7 @@ A beautiful, safe, and fun kids' blog built with **Eleventy** and hosted on **Gi
 - 🎨 **Drawings** – digital and traditional artwork
 - 🧠 **Quizzes** – interactive knowledge tests
 - 🎮 **Games** – memory games and puzzles
-- ✨ **Fun content** – jokes, facts, and more
+- ✨ **Fun content** – jokes, facts, and more..
 
 Built with vanilla JavaScript, semantic HTML, and beautiful CSS – **no backend, no tracking, completely safe for kids!**
 
