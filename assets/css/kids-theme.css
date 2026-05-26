@@ -1135,3 +1135,50 @@ body::before {
 }
 
 .sticker-clear:hover { background: var(--color-coral); color: #fff; }
+
+/* ============================================================
+   UNIVERSAL NAV GRID  –  used by Games, Puzzles, Stories, Quizzes
+   ============================================================ */
+.unav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 960px) { .unav { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .unav { grid-template-columns: repeat(2, 1fr); } }
+
+.ucard {
+  position: relative;
+  border-radius: 20px;
+  padding: 1.4rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-navy);
+  border: 3px solid #d0c8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  transition: transform 0.25s cubic-bezier(.34,1.56,.64,1), box-shadow 0.25s;
+  min-width: 0;
+}
+.ucard:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.12);
+}
+
+/* Colour variants */
+.uc-pink    { border-color: var(--color-pink);             background: linear-gradient(135deg,#fff5f9,#fff); }
+.uc-purple  { border-color: var(--color-light-purple);     background: linear-gradient(135deg,#f5f0ff,#fff); }
+.uc-sky     { border-color: var(--color-sky-blue);         background: linear-gradient(135deg,#f0f9ff,#fff); }
+.uc-mint    { border-color: var(--color-mint-green);       background: linear-gradient(135deg,#f0fff4,#fff); }
+.uc-sunshine{ border-color: var(--color-sunshine-yellow);  background: linear-gradient(135deg,#fffdf0,#fff); }
+.uc-coral   { border-color: var(--color-coral);            background: linear-gradient(135deg,#fff5f5,#fff); }
+.uc-teal    { border-color: var(--color-teal);             background: linear-gradient(135deg,#f0fffc,#fff); }
+
+.ucard-em  { font-size: 2.4rem; line-height: 1; }
+.ucard-ttl { font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 0.9rem; color: var(--color-navy); }
+.ucard-sub { font-size: 0.72rem; font-weight: 600; color: #8a96a3; }

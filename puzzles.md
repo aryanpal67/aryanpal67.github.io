@@ -9,42 +9,40 @@ description: "Solve fun brain-teasers, riddles, sliding puzzles and secret codes
   <p>6 awesome puzzles to solve! Riddles, codes, sliding tiles &amp; more! 🤔</p>
 </div>
 
-<!-- ══════════════════════════════════════════════
-     NAV CARDS
-══════════════════════════════════════════════ -->
+<!-- NAV CARDS -->
 <section class="section reveal">
   <div class="container">
-    <div class="games-nav-grid">
+    <div class="unav">
 
-      <a href="#word-riddles"   class="game-nav-card gnc-pink">
-        <span class="gnc-emoji">🔤</span>
-        <span class="gnc-title">Word Riddles</span>
-        <span class="gnc-desc">Solve tricky riddles!</span>
+      <a href="#word-riddles"   class="ucard uc-pink">
+        <span class="ucard-em">🔤</span>
+        <span class="ucard-ttl">Word Riddles</span>
+        <span class="ucard-sub">Solve tricky riddles!</span>
       </a>
-      <a href="#sliding-puzzle" class="game-nav-card gnc-purple">
-        <span class="gnc-emoji">🧩</span>
-        <span class="gnc-title">Sliding Puzzle</span>
-        <span class="gnc-desc">Put tiles in order!</span>
+      <a href="#sliding-puzzle" class="ucard uc-purple">
+        <span class="ucard-em">🧩</span>
+        <span class="ucard-ttl">Sliding Puzzle</span>
+        <span class="ucard-sub">Put tiles in order!</span>
       </a>
-      <a href="#logic-puzzles"  class="game-nav-card gnc-sky">
-        <span class="gnc-emoji">🧠</span>
-        <span class="gnc-title">Logic Puzzles</span>
-        <span class="gnc-desc">Use your brain!</span>
+      <a href="#logic-puzzles"  class="ucard uc-sky">
+        <span class="ucard-em">🧠</span>
+        <span class="ucard-ttl">Logic Puzzles</span>
+        <span class="ucard-sub">Use your brain!</span>
       </a>
-      <a href="#spot-odd"       class="game-nav-card gnc-mint">
-        <span class="gnc-emoji">🔍</span>
-        <span class="gnc-title">Spot the Odd One</span>
-        <span class="gnc-desc">Find what's different!</span>
+      <a href="#spot-odd"       class="ucard uc-mint">
+        <span class="ucard-em">🔍</span>
+        <span class="ucard-ttl">Spot the Odd One</span>
+        <span class="ucard-sub">Find what's different!</span>
       </a>
-      <a href="#number-puzzle"  class="game-nav-card gnc-sunshine">
-        <span class="gnc-emoji">🔢</span>
-        <span class="gnc-title">Number Puzzles</span>
-        <span class="gnc-desc">Find the pattern!</span>
+      <a href="#number-puzzle"  class="ucard uc-sunshine">
+        <span class="ucard-em">🔢</span>
+        <span class="ucard-ttl">Number Puzzles</span>
+        <span class="ucard-sub">Find the pattern!</span>
       </a>
-      <a href="#secret-code"    class="game-nav-card gnc-coral">
-        <span class="gnc-emoji">⭐</span>
-        <span class="gnc-title">Secret Codes</span>
-        <span class="gnc-desc">Crack the cipher!</span>
+      <a href="#secret-code"    class="ucard uc-coral">
+        <span class="ucard-em">⭐</span>
+        <span class="ucard-ttl">Secret Codes</span>
+        <span class="ucard-sub">Crack the cipher!</span>
       </a>
 
     </div>
