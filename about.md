@@ -13,7 +13,9 @@ description: "Learn all about Aryan – my story, interests, and dreams!"
   <div class="container--narrow">
     <div class="about-card">
       <div class="about-avatar-wrap">
-        <div class="about-avatar">🧒</div>
+        <div class="about-avatar">
+          <img src="/assets/images/aryan_dp.jpg" alt="Aryan" class="avatar-img" />
+        </div>
         <h2 class="about-name">Aryan</h2>
         <p class="about-tagline">Age 8 · Young Blogger · Artist · Dreamer</p>
       </div>

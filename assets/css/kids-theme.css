@@ -227,6 +227,14 @@ body::before {
   font-size: 4.5rem;
   box-shadow: 0 8px 32px rgba(255,107,157,.35), 0 0 0 8px rgba(167,139,250,.18);
   animation: avatarPulse 3.5s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.hero-avatar .avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 @keyframes avatarPulse {
@@ -784,6 +792,14 @@ body::before {
   justify-content: center;
   font-size: 5.5rem;
   box-shadow: 0 8px 32px rgba(255,217,61,.4);
+  overflow: hidden;
+}
+
+.about-avatar .avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .about-name {

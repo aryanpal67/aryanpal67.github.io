@@ -10,7 +10,9 @@ description: "Aryan's awesome kids blog – stories, art, quizzes & games!"
   <div class="hero-float" style="top:60%;left:3%;animation-duration:6s;animation-delay:-2s">🌈</div>
   <div class="hero-float" style="top:65%;right:5%;animation-duration:4.5s;animation-delay:-0.5s">🎨</div>
 
-  <div class="hero-avatar">🧒</div>
+  <div class="hero-avatar">
+    <img src="/assets/images/aryan_dp.jpg" alt="Aryan" class="avatar-img" />
+  </div>
   <h1 class="hero-title">Hi, I'm <span>Aryan!</span> 👋</h1>
   <p class="hero-subtitle">Welcome to my super awesome blog full of stories, drawings, quizzes and lots of fun! 🌟</p>
 
