@@ -31,6 +31,7 @@ description: "Take 15 fun quizzes about animals, space, science and more!"
 .qcard:nth-child(13) { border-color:#6bcb77; background:linear-gradient(135deg,#f0fff4,#fff); }
 .qcard:nth-child(14) { border-color:#a78bfa; background:linear-gradient(135deg,#f5f0ff,#fff); }
 .qcard:nth-child(15) { border-color:#ff6b9d; background:linear-gradient(135deg,#fff5f9,#fff); }
+.qcard:nth-child(16) { border-color:#ffd93d; background:linear-gradient(135deg,#fffdf0,#fff); }
 .qcard-em  { font-size:2.4rem; line-height:1; }
 .qcard-ttl { font-family:'Baloo 2',cursive; font-weight:700; font-size:0.88rem; color:#1e3a5f; }
 .qcard-sub { font-size:0.72rem; font-weight:600; color:#8a96a3; }
@@ -63,7 +64,7 @@ description: "Take 15 fun quizzes about animals, space, science and more!"
 
 <div class="page-hero page-hero-quizzes">
   <h1>🧠 My Quizzes</h1>
-  <p>15 awesome quizzes! Test your knowledge and see if you can get 100%! 🎯</p>
+  <p>16 awesome quizzes! Test your knowledge and see if you can get 100%! 🎯</p>
 </div>
 
 <section class="section reveal">
@@ -85,6 +86,7 @@ description: "Take 15 fun quizzes about animals, space, science and more!"
       <a href="#q-sports"      class="qcard"><span class="qcard-em">⚽</span><span class="qcard-ttl">Sports Quiz</span><span class="qcard-sub">Game on!</span></a>
       <a href="#q-tech"        class="qcard"><span class="qcard-em">💻</span><span class="qcard-ttl">Tech Quiz</span><span class="qcard-sub">Digital world!</span></a>
       <a href="#q-superheroes" class="qcard"><span class="qcard-em">🦸</span><span class="qcard-ttl">Superheroes</span><span class="qcard-sub">Who's your hero?</span></a>
+      <a href="#q-brain"       class="qcard"><span class="qcard-em">🤯</span><span class="qcard-ttl">Brain Teasers</span><span class="qcard-sub">Emoji puzzles!</span></a>
     </div>
 
     <div class="deco-sep">✨ 🧠 ✨ 🧠 ✨</div>
@@ -117,6 +119,8 @@ description: "Take 15 fun quizzes about animals, space, science and more!"
     <div id="q-tech"        class="q-section"><h2>💻 Technology Quiz</h2><div data-quiz="tech-quiz"></div></div>
     <div class="deco-sep">✨ 🧠 ✨ 🧠 ✨</div>
     <div id="q-superheroes" class="q-section"><h2>🦸 Superheroes Quiz</h2><div data-quiz="superheroes-quiz"></div></div>
+    <div class="deco-sep">✨ 🧠 ✨ 🧠 ✨</div>
+    <div id="q-brain"       class="q-section"><h2>🤯 Brain Teaser Quiz</h2><div data-quiz="brain-teaser-quiz"></div></div>
 
   </div>
 </section>

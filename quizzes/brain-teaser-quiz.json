@@ -1,0 +1,66 @@
+{
+  "title": "🧠 Brain Teaser Quiz",
+  "description": "Combine the emojis and letters to figure out the word! Fun for smart kids!",
+  "questions": [
+    {
+      "question": "📘 + ✔️ = ?",
+      "options": ["Bookmark", "Notebook", "Checkbook", "Textbook"],
+      "answer": "Bookmark",
+      "explanation": "📘 Book + ✔️ Mark = Bookmark! The thing you use to save your page! 📖"
+    },
+    {
+      "question": "🌙 + ⭐ = ?",
+      "options": ["Starnight", "Monster", "Galaxy", "Nightstar"],
+      "answer": "Monster",
+      "explanation": "🌙 Mon + ⭐ Ster = Monster! Things that go bump in the night! 👾"
+    },
+    {
+      "question": "🎤 + 🌊 = ?",
+      "options": ["Microwave", "Microphone", "Microcosm", "Microchip"],
+      "answer": "Microphone",
+      "explanation": "🎤 Micro + 🌊 Phone... wait, waves = phone signal! Microphone! 🎙️"
+    },
+    {
+      "question": "🌊 + 🔥 = ?",
+      "options": ["Firewave", "Steamroller", "Microwave", "Campfire"],
+      "answer": "Microwave",
+      "explanation": "🌊 Micro (waves) + 🔥 Wave (heat) = Microwave! The kitchen hero! 🍽️"
+    },
+    {
+      "question": "🐟 + 👨 = ?",
+      "options": ["Fisherman", "Fishman", "Seafarer", "Merman"],
+      "answer": "Fishman",
+      "explanation": "🐟 Fish + 👨 Man = Fishman! Half fish, half human — like a merman! 🦸"
+    },
+    {
+      "question": "🪟 + 🥜 = ?",
+      "options": ["Peanut", "Walnut", "Window", "Chestnut"],
+      "answer": "Walnut",
+      "explanation": "🪟 Wall + 🥜 Nut = Walnut! That wrinkly brain-shaped nut! 🌰"
+    },
+    {
+      "question": "💵 + 'ew' = ?",
+      "options": ["Cashew", "Moneydew", "Billfold", "Renew"],
+      "answer": "Cashew",
+      "explanation": "💵 Cash + ew = Cashew! The curved yummy nut! 🥜"
+    },
+    {
+      "question": "🍇 + 'pes' = ?",
+      "options": ["Grapepes", "Escapes", "Grapes", "Shapes"],
+      "answer": "Grapes",
+      "explanation": "🍇 Gra + pes = Grapes! The juicy purple fruit! 🍇"
+    },
+    {
+      "question": "👁️ + ❓ = ?",
+      "options": ["Eyeque", "Vision", "IQ", "Eyeball"],
+      "answer": "IQ",
+      "explanation": "👁️ I + ❓ Q = IQ! Intelligence Quotient — how smart you are! 🧠"
+    },
+    {
+      "question": "🛏️ + ➡️ = ?",
+      "options": ["Bedside", "Pillow", "Bedward", "Headboard"],
+      "answer": "Pillow",
+      "explanation": "🛏️ Bed arrow → pointing to the Pillow! The soft thing you sleep on! 😴"
+    }
+  ]
+}
