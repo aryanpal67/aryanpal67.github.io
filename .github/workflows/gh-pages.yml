@@ -3,25 +3,22 @@ name: Build & Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main          # runs every time you push to main
+      - main
 
-# ── Required permissions for the modern Pages deploy API ──
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Only one deployment at a time
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
-  # ── JOB 1: Build with Eleventy ─────────────────────────────
   build:
     runs-on: ubuntu-latest
-    steps:
 
+    steps:
       - name: ✅ Checkout code
         uses: actions/checkout@v4
 
@@ -38,13 +35,12 @@ jobs:
         run: npm run build
 
       - name: ⬆️ Upload _site/ as Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: ./_site        # Eleventy outputs here
+          path: ./_site
 
-  # ── JOB 2: Deploy the artifact to GitHub Pages ────────────
   deploy:
-    needs: build                # wait for build to finish
+    needs: build
     runs-on: ubuntu-latest
 
     environment:
